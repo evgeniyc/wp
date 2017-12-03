@@ -25,7 +25,7 @@
 	
 	<header id="masthead" class="site-header row" role="banner">
 		<div class="wrap">
-			<img src="<?php echo get_template_directory_uri().'/assets/images/wp1.jpg';?>" alt="logo" />
+			<a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/wp1.jpg';?>" alt="logo" /></a>
 		</div>
 	</header><!-- #masthead -->
 	<nav class="row">

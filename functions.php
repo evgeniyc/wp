@@ -50,3 +50,7 @@ function mytheme_widgets_init() {
 		'description' => 'Левый сайдбар темы. Главный.',
     ) );
 }
+/**
+ * SVG icons functions and filters.
+ */
+//require ( 'icon-functions.php' );

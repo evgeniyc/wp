@@ -14,15 +14,23 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		?>
+		<a href="<?php the_permalink(); ?>">
+			<?php
+				the_title( '<h3 class="entry-title">', '</h3>' );
+			?>
+		</a>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-		/* translators: %s: Name of current post */
-			the_content();
+			the_content('Читать...');
 		?>
 	</div><!-- .entry-content -->
+	<div id="post-info">
+		<?php	
+			echo 'Дата публикации: '.get_the_date();
+			echo ' Автор: '.get_the_author();
+		?>
+	</div>
+	<hr>
 </article><!-- #post-## -->

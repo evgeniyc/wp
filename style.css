@@ -12,17 +12,27 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 
 */
 
+body
+{
+	background-image: url(./assets/images/bg1.jpg);
+}
 #page
 {
 	color: #A12A2A;
+	box-shadow: 0 0 4px black;
 }
 #page > header
 {
 	background: #8FA4B5;
 }
+nav
+{
+	background: linear-gradient(to top, #A68D40, white);
+}	
 main
 {
-	background: #D3E3F1;
+	background: #2E5576;
+	color: white;
 }
 aside
 {
@@ -30,8 +40,10 @@ aside
 }
 footer
 {
-	background: #9B8173;
+	background: linear-gradient(to top, #9B8173, white);
 	color: #0056B8;
+	text-shadow: 0 0 1px white;
+	font-size: small; 
 }
 footer div
 {
@@ -60,7 +72,8 @@ footer div
 {
 	text-decoration: none;
 	display: block;
-	text-shadow: -1px 1px 1px black;
+	text-shadow: 0 0 1px white;
+	padding: 5px;
 }
 aside ul
 {
@@ -70,13 +83,31 @@ aside ul
 aside li
 {
 	list-style: none;
-	padding: 20px 0 5px 0;
-	border-bottom: 2px dotted black;
-
+	
+}
+#sidebar > li
+{
+	border-bottom: 1px dotted black;
+	padding: 5px;
 }
 
 aside h2
 {
 	font-size: large;
 	color: brown;
+}
+.alignleft
+{
+	float: left;
+	margin: 0.5em 1em 0.5em 0;
+}
+#searchform input
+{
+	max-width: 53%;
+	font-size: small;
+}
+#post-info
+{
+	font-size: small;
+	color: yellow;
 }
