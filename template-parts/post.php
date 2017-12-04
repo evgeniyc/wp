@@ -18,7 +18,13 @@
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		?>
 	</header><!-- .entry-header -->
-
+	<div class="entry-image">
+		<?php
+			if ( has_post_thumbnail() ) {
+				the_post_thumbnail();
+			}
+		?>
+	</div><!-- .entry-image -->
 	<div class="entry-content">
 		<?php
 		/* translators: %s: Name of current post */

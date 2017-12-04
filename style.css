@@ -110,4 +110,15 @@ aside h2
 {
 	font-size: small;
 	color: yellow;
+	float: right;
+}
+.entry-image
+{
+	float: left;
+	margin: 0.5em 1em 0.5em 0;
+}
+#header-text
+{
+	color: blue;
+	font-style: italic;
 }

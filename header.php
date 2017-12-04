@@ -24,8 +24,21 @@
 <div id="page" class="site container">
 	
 	<header id="masthead" class="site-header row" role="banner">
-		<div class="wrap">
-			<a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/wp1.jpg';?>" alt="logo" /></a>
+		<div class="col-md-4">
+			<!--<a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/wp1.jpg';?>" alt="logo" /></a>-->
+			<?php
+				if ( function_exists( 'the_custom_logo' ) ) {
+					the_custom_logo();
+				}
+			?>
+		</div>
+		<div id="header-text" class="col-md-8">
+			<h1>
+				<?php bloginfo('name'); ?>
+			</h1>
+			<p>
+				<?php bloginfo('description'); ?>
+			</p>
 		</div>
 	</header><!-- #masthead -->
 	<nav class="row">

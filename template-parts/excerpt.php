@@ -20,8 +20,14 @@
 			?>
 		</a>
 	</header><!-- .entry-header -->
-
-	<div class="entry-content">
+	<div class="entry-image">
+		<?php
+			if ( has_post_thumbnail() ) {
+				the_post_thumbnail('thumbnail');
+			}
+		?>
+	</div>
+	<div class="entry-content"><br>
 		<?php
 			the_content('Читать...');
 		?>
@@ -32,5 +38,6 @@
 			echo ' Автор: '.get_the_author();
 		?>
 	</div>
+	<div class="clearfix"></div>
 	<hr>
 </article><!-- #post-## -->
